@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="book-search-module">
+    <test name="book-test-iava">
+        <parameter name="keyword" value="java"></parameter>
+        <classes>
+            <class name="com.searchmoudle.tests.SearchTest" />
+        </classes>
+    </test>
+    <test name="book-test-qa">
+        <parameter name="keyword" value="qa"></parameter>
+        <classes>
+            <class name="com.searchmoudle.tests.SearchTest" />
+        </classes>
+    </test>
+    <test name="book-test-webdriver">
+        <parameter name="keyword" value="webdriver"></parameter>
+        <classes>
+            <class name="com.searchmoudle.tests.SearchTest" />
+        </classes>
+    </test>
+    <test name="book-test-docker">
+        <parameter name="keyword" value="docker"></parameter>
+        <classes>
+            <class name="com.searchmoudle.tests.SearchTest" />
+        </classes>
+    </test>
+    <test name="book-test-kubernetes">
+        <parameter name="keyword" value="kubernetes"></parameter>
+        <classes>
+            <class name="com.searchmoudle.tests.SearchTest" />
+        </classes>
+    </test>
+ </suite>

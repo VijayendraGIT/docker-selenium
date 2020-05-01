@@ -17,12 +17,12 @@ ADD book-flght-module.xml 					book-flght-module.xml
 ADD search-module.xml						search-module.xml
 
 #Add healthcheck.sh
-RUN wget https://s3.amazonaws.com/selenium-docker/healthcheck/healthcheck.sh
+#RUN wget https://s3.amazonaws.com/selenium-docker/healthcheck/healthcheck.sh
 
 #Below varaible also be passed to entrypoint which will be required to pass while run image 
 #BROWSER
 #HUB_HOST
 #MODULE
 
-#ENTRYPOINT java -cp selenium-docker.jar:selenium-docker-tests.jar:libs/* -DBROWSER=$BROWSER -DHUB_HOST=$HUB_HOST org.testng.TestNG $MODULE
-ENTRYPOINT sh healthcheck.sh
+ENTRYPOINT java -cp selenium-docker.jar:selenium-docker-tests.jar:libs/* -DBROWSER=$BROWSER -DHUB_HOST=$HUB_HOST org.testng.TestNG $MODULE
+#ENTRYPOINT sh healthcheck.sh
